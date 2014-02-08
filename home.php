@@ -9,10 +9,6 @@
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/meny.css" />
 <style>
-  @font-face{
-  src: url('font2.woff');
-  font-family: myfont;
-}
     html {
       height: 100%;
     }
@@ -60,7 +56,7 @@ body {
             </ul>
         </div>
 
-        <div class="meny-arrow"></div>
+        <div class="meny-arrow" style="border-top-color:white"></div>
 <div class="contents">
     <!-- ===== FLOW ===== -->
     <div id="contentFlow" class="ContentFlow">
