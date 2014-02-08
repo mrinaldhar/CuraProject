@@ -46,7 +46,7 @@ $(document).ready(function() {
 function redirect()
 {
 
-	window.location.replace("index.html#firstpage/1");
+	window.location.replace("home.php");
 }
 
 </script>
@@ -90,6 +90,9 @@ body {
     user-select:none;
 
     cursor:default;
+}
+#begin {
+    margin-top: 320px;
 }
 </style>
 </head>
