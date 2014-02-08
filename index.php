@@ -71,7 +71,7 @@ body {
 </div>
 <div class="slide" id="sl4">
 	<p>Its gonna be an all new adventure for you,<br />and it starts now.</p><br /><br />
-<h1 id="begin" style="text-shadow: none;"><a href="home.php">Let's begin</a></h1>
+<h1 id="begin" style="text-shadow: none;"><a href="al.php">Let's begin</a></h1>
 
 			
 </div>
