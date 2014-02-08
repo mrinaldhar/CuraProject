@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 <script src="js/jquerymin.js"></script>
 <script src="js/jqueryui.js"></script>	
-<script src="js/sidetounlock.js"></script>
+<script src="js/slidetounlock.js"></script>
 
 <link rel="stylesheet" href="css/jbclock.css" type="text/css" media="all" />
 <script type="text/javascript" src="js/jbclock.js"></script>
