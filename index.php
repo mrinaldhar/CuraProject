@@ -5,12 +5,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
 	<title>Cura Events | IIIT-H</title>
 	
-	<link rel="stylesheet" type="text/css" href="pagemaster/jquery.fullPage.css" />
-	<script src="jquerymin.js"></script>
-	<script src="jqueryui.js"></script>	
-	<script src="sidetounlock.js"></script>
-	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript" src="pagemaster/jquery.fullPage.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<script src="js/jquerymin.js"></script>
+	<script src="js/jqueryui.js"></script>	
+	<script src="js/sidetounlock.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			var pepe = $.fn.fullpage({
@@ -19,6 +19,11 @@
 			});
 			
 		});
+function redirect()
+  {
+
+  window.location.assign("home.php");
+  }
 	</script>
 
 <style>
@@ -60,7 +65,8 @@ body {
 <div class="slide active">
 <div class="wrap" id="sl1">
 <h1 style="color:white">Cura Events</h1><br /><br /><br />
-<h2 style="color:#dddddd">IIIT Hyderbad</h2>
+<h2 style="color:#dddddd">IIIT Hyderbad</h2><br /><br /><br />
+<p style="color:white; font-size:1em;">Temporary Note: Press Right button on keyboard to move.</p>
 </div>
 </div>
 <div class="slide" id="sl2">
@@ -71,8 +77,7 @@ body {
 </div>
 <div class="slide" id="sl4">
 	<p>Its gonna be an all new adventure for you,<br />and it starts now.</p><br /><br />
-<h1 id="begin" style="text-shadow: none;"><a href="al.php">Let's begin</a></h1>
-
+<h1 id="begin" style="text-shadow: none;" onclick="redirect()">Let's begin</h1>
 			
 </div>
 </div>

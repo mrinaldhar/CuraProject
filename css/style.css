@@ -1,5 +1,5 @@
 @font-face{
-  src: url('font2.woff');
+  src: url('../font/font2.woff');
   font-family: myfont;
 }
 #begin {
@@ -12,7 +12,7 @@
   -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   font-weight: 300;
-  -webkit-animation: slidetounlock 6s infinite;
+  -webkit-animation: slidetounlock 3s infinite;
   
 }
 

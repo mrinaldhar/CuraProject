@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title>Cura Events | IIIT Hyderabad</title>
-	<script type="text/javascript" src="jquerymin.js"></script>
-	<link rel="stylesheet" href="style.css" />
-  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
-  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquerymin.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   
-<link rel="stylesheet" href="css/demo.css" />
+<link rel="stylesheet" href="css/meny.css" />
 <style>
   @font-face{
   src: url('font2.woff');
@@ -31,7 +31,7 @@
     
     
 	</style>
-  <link rel="stylesheet" href="style_home.css" />
+  <link rel="stylesheet" href="css/style_home.css" />
 	<script>
 	  $(document).ready(function(){
       $(".main").onepage_scroll({
