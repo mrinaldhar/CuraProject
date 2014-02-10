@@ -82,8 +82,8 @@ ul {
 			<ul background="media.jpg">
 				<li class="btn-cura">Home</li>
 				<li class="btn-cura"><a href="#">Events</a></li>
-				<li class="btn-cura"><a href="#">Updates</a></li>
-				<li class="btn-cura"><a href="#">Admin login</a></li>
+				<li class="btn-cura"><a href="updates.php">Updates</a></li>
+				<li class="btn-cura"><a href="login.php">Admin login</a></li>
 				<li class="btn-cura"><a href="#">Contact us</a></li>
 				<li class="btn-cura"><a href="#">Demo</a></li>
 				<li class="btn-cura"><a href="#">Responsive Design</a></li>
@@ -102,19 +102,20 @@ ul {
       </section>
 	    
 	    <section class="page2">
-	      <div class="page_container">
-          <h2>Its simple</h2>
-          <p style="color:white">Because "Simplicity is the ultimate sophistication"</p>
+          <h1>Its simple</h1>
+          <h2>and "Simplicity is the ultimate sophistication"</h2>
        	      
-	      </div>
       </section>
 	    
 	    <section class="page3">
-	      <div class="page_container">
           <h1>Pretty Neat Eh?</h1>
           <h2>This is all awesome.</h2>
           
-  	    </div>
+      </section>
+            <section class="page4">
+          <h1>Pretty Neat Eh?</h1>
+          <h2>This is all awesome.</h2>
+          
       </section>
     </div>
 
