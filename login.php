@@ -1,14 +1,17 @@
 <html>
 <head><title>login shell</title>
+
 <style>
 body {
-	background-color: rgb(0,0,0);
 	overflow:hidden;
+    background: #000000 url('img/lock.png') center no-repeat;
 }
 #shell {
 	height:100%;
 	width:100%;
 	color:white;
+    background: rgba(0,0,0,0.8);
+
 }
 
 input {
@@ -91,10 +94,10 @@ function submit_it(val1, val2) {
 </script>
 
 </head>
-<body onload="shell()"><code>
-<div id="shell">
+<body onload="shell()">
+<code>
+<div id="shell" class="main">
 </div>
 </code>
-
 </body>
 </html>

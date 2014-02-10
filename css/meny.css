@@ -61,6 +61,7 @@ h2 {
 }
 	.meny ul {
 		margin-top: 10px;
+		list-style: none;
 	}
 		.meny ul li {
 			display: inline-block;
@@ -148,19 +149,3 @@ h2 {
 		font-size: 16px;
 		line-height: 1.32;
 	}
-	.contents small {
-		display: block;
-		margin-top: 10px;
-		padding-top: 10px;
-		color: #333;
-		font-size: 0.85em;
-		border-top: 1px dashed #ccc;
-
-		-webkit-text-size-adjust: none;
-	}
-	.contents .sharing {
-		position: absolute;
-		bottom: 20px;
-	}
-
-
