@@ -49,6 +49,29 @@ body {
 #contentFlow {
 	max-width: 60%;
 }
+.btn-cura {
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.4);
+  color:white;
+  font-size: 1.5em;
+margin:7px;
+color:white;
+text-decoration: none;
+box-shadow: 0px 0px 10px white;
+}
+.btn-cura:hover {
+  background-color: rgba(255,255,255,0.9);
+  color:black;
+}
+.btn-cura a{
+  color:#aaaaaa;
+}
+ul {
+  list-style-image: none;
+}
+.meny {
+  background: url('media.jpg');
+}
 </style>
 </head>
 <body>
@@ -56,15 +79,15 @@ body {
 <div class="none"></div>
 
   		<div class="meny">
-			<ul>
-				<li><img src="">Home</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#">Updates</a></li>
-				<li><a href="#">Admin login</a></li>
-				<li><a href="#">Contact us</a></li>
-				<li><a href="#">Demo</a></li>
-				<li><a href="#">Responsive Design</a></li>
-				<li><a href="#">iPhone and Android</a></li>
+			<ul background="media.jpg">
+				<li class="btn-cura">Home</li>
+				<li class="btn-cura"><a href="#">Events</a></li>
+				<li class="btn-cura"><a href="#">Updates</a></li>
+				<li class="btn-cura"><a href="#">Admin login</a></li>
+				<li class="btn-cura"><a href="#">Contact us</a></li>
+				<li class="btn-cura"><a href="#">Demo</a></li>
+				<li class="btn-cura"><a href="#">Responsive Design</a></li>
+				<li class="btn-cura"><a href="#">iPhone and Android</a></li>
 			</ul>
 		</div>
 
@@ -73,73 +96,9 @@ body {
 	  	<div class="main">
 	    
       <section class="page1">
-        <div class="page_container">
-
-<div id="contentFlow" class="ContentFlow">
-        <!-- should be place before flow so that contained images will be loaded first -->
-        <div class="loadIndicator"><div class="indicator"></div></div>
-
-        <div class="flow">
-
-            <div class="item">
-                <img class="content" src="pics/pic0.png"/>
-                <div class="caption">pic0: some stripes</div>
-            </div>
-            <div class="item">
-                <img class="content" src="pics/pic1.png"/>
-                <div class="caption">pic1: some stripes</div>
-            </div>
-            <div class="item">
-                <img class="content" src="pics/pic2.png"/>
-                <div class="caption">pic2: some stripes</div>
-            </div>
-            <div class="item">
-                <img class="content" src="pics/pic1.png"/>
-                <div class="caption">pic1: some stripes</div>
-            </div>
-
-            <div class="item">
-                <img class="content" src="pics/pic0.png"/>
-                <div class="caption">pic0: some stripes</div>
-            </div>
-            <div class="item">
-                <img class="content" src="pics/pic1.png"/>
-                <div class="caption">pic1: some stripes</div>
-            </div>
-            <div class="item">
-                <img class="content" src="pics/pic2.png"/>
-                <div class="caption">pic2: some stripes</div>
-            </div>
-            <div class="item">
-                <img class="content" src="pics/pic1.png"/>
-                <div class="caption">pic1: some stripes</div>
-            </div>
-
-            <div class="item">
-                <img class="content" src="pics/pic0.png"/>
-                <div class="caption">pic0: some stripes</div>
-            </div>
-            <div class="item">
-                <img class="content" src="pics/pic1.png"/>
-                <div class="caption">pic1: some stripes</div>
-            </div>
-            <div class="item">
-                <img class="content" src="pics/pic2.png"/>
-                <div class="caption">pic2: some stripes</div>
-            </div>
-            <div class="item">
-                <img class="content" src="pics/pic1.png"/>
-                <div class="caption">pic1: some stripes</div>
-            </div>
-
-        </div>
-        <div class="globalCaption"></div>
-        <div class="scrollbar">
-            <div class="slider"><div class="position"></div></div>
-        </div>
-
-  	    </div>
-  	    
+<div class="page_container">
+<h1>Welcome</h1>
+</div>  	    
       </section>
 	    
 	    <section class="page2">
