@@ -35,9 +35,11 @@ return True;
 function shell() {
 
 var sh=document.getElementById('shell');
-sh.innerHTML+=">> Connecting to host...<br />";
+sh.innerHTML+=">> Connecting to server...<br />";
+setTimeout(function() {
+    sh.innerHTML += ">> Response received.<br />";
 sh.innerHTML+=">> Welcome to Cura Events Administration access page. ";
-sh.innerHTML+="<br />>> Please enter your username: <br />>_ <input type='text' id='userinp' />";
+sh.innerHTML+="<br />>> Please enter your username: <br />>_ <input type='text' id='userinp' size='100' />";
 $('#userinp').focus();
 $('#userinp').keypress(function(e) {
     if(e.which == 13) {
@@ -45,11 +47,13 @@ $('#userinp').keypress(function(e) {
     }
 });
 
+}, 2000);
+
 
 }
 function proceed_pwd(val) {
 var sh=document.getElementById('shell');
-sh.innerHTML+="<br />>> Trying to login as "+document.getElementById('userinp').value+"@Cura. <br />>> Please enter your password:<br />>_ <input type='password' id='userpwd' />";
+sh.innerHTML+="<br />>> Trying to login as "+document.getElementById('userinp').value+"@Cura. <br />>> Please enter your password:<br />>_ <input type='password' id='userpwd' size='100' />";
 $('#userpwd').focus();
 $('#userpwd').keypress(function(e) {
     if(e.which == 13) {
@@ -75,6 +79,11 @@ function submit_it(val1, val2) {
         	}
         	else {
         		sh.innerHTML+="<br />>> <font color='red'>Authentication failed. </font>You do not have access.";
+                setTimeout(function() {
+
+                sh.innerHTML='';
+                return shell();
+            }, 2000);
         	}
         }
       });
