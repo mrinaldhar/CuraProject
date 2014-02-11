@@ -79,7 +79,8 @@ function submit_it(val1, val2) {
            	if (data=='1')
         	{
         		sh.innerHTML+="<br />>> <font color='lightgreen'>Authentication successful. </font>Redirecting to admin interface...<br />";
-        	}
+        	       transfer();
+            }
         	else {
         		sh.innerHTML+="<br />>> <font color='red'>Authentication failed. </font>You do not have access.";
                 setTimeout(function() {
@@ -90,6 +91,11 @@ function submit_it(val1, val2) {
         	}
         }
       });
+}
+function transfer() {
+    setTimeout(function () {
+        window.location="adminpanel.php";
+    }, 2000);
 }
 </script>
 

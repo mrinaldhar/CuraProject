@@ -97,7 +97,7 @@ ul {
 	    
       <section class="page1">
 <div class="page_container">
-<h1>Welcome</h1>
+<h1>Android </h1>
 </div>  	    
       </section>
 	    

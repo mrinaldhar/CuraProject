@@ -1,0 +1,43 @@
+body {
+	background-color: black;
+	color:white;
+	text-decoration: none;
+}
+a {
+	color:#aaaaaa;
+	text-decoration: none;
+}
+.menubar {
+	width:100%;
+	top:0px;
+	position: absolute;
+	top:0px;
+	background-color: rgba(80,80,80,1);
+	left:0px;
+	right:0px;
+	max-height:auto;
+	text-align: center;
+}
+.menuitem {
+
+	padding: 20px 10px 20px 10px;
+	display:inline-block;
+	width:15%;
+
+}
+.menubar a {
+	color:white;
+}
+.menuitem:hover {
+	background-color: rgb(100,100,100);
+	color:white;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding:60px;
+	max-width:74%;
+	height:80%;
+	background-color:rgb(100,100,100);
+}
