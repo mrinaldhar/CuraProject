@@ -2,6 +2,10 @@ body {
 	background-color: black;
 	color:white;
 	text-decoration: none;
+	font-family: consolas;
+}
+#viewteamsp, #manageeventsp, #newadminp {
+	display:none;
 }
 a {
 	color:#aaaaaa;
@@ -24,6 +28,7 @@ a {
 	display:inline-block;
 	width:15%;
 
+	cursor: pointer;
 }
 .menubar a {
 	color:white;
@@ -32,7 +37,32 @@ a {
 	background-color: rgb(100,100,100);
 	color:white;
 }
+#newadminp {
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	font-family: consolas;
+}
+#newadminp table {
+	width:100%;
+	padding:30px;
 
+}
+button {
+	padding:10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border:0px;
+	box-shadow: 1px 1px 10px black;
+}
+button:hover {
+background-color: black;
+color:white;
+border:0px;
+}
+#newadminp table td {
+	text-align: center;
+	padding: 30px;
+}
 .container {
 	position: relative;
 	margin: 0 auto;
@@ -40,4 +70,41 @@ a {
 	max-width:74%;
 	height:80%;
 	background-color:rgb(100,100,100);
+}
+.pageitem {
+	width:100%;
+}
+.footer {
+	position: absolute;
+	bottom:0px;
+	width:100%;
+	left:0px;
+	right:0px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+input {
+	box-shadow: 1px 1px 10px black;
+	border:0px;
+	padding:5px;
+	font-family: colsolas;
+}
+select {
+	padding:5px;
+}
+option {
+	padding:5px;
+}
+#teaminfotable {
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	font-family: consolas;
+	width:100%;
+	padding:30px;
+	margin-top: 30px;
+	display: none;
+
 }

@@ -72,10 +72,24 @@ ul {
 .meny {
   background: url('media.jpg');
 }
+.fb-like-box {
+	position: relative;
+	margin-top:50px;
+}
+.page1 {
+	background-color: black;
+}
 </style>
 </head>
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="none"></div>
 
   		<div class="meny">
@@ -92,29 +106,13 @@ ul {
 
 	  	<div class="main">
 	    
-      <section class="page1">
-<div class="page_container">
-<h1>Android </h1>
-</div>  	    
-      </section>
-	    
-	    <section class="page2">
-          <h1>Its simple</h1>
-          <h2>and "Simplicity is the ultimate sophistication"</h2>
-       	      
-      </section>
-	    
-	    <section class="page3">
-          <h1>Pretty Neat Eh?</h1>
-          <h2>This is all awesome.</h2>
-          
-      </section>
-            <section class="page4">
-          <h1>Pretty Neat Eh?</h1>
-          <h2>This is all awesome.</h2>
-          
-      </section>
-    </div>
+<div class="fb-like-box" data-href="https://www.facebook.com/Curaevents" data-colorscheme="dark" data-show-faces="true" data-header="true" data-width="600px" data-stream="true" data-show-border="true"></div>
+
+
+
+</div>  
+
+      
 
 	<script src="js/meny.min.js"></script>
 		<script>

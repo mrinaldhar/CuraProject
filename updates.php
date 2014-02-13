@@ -3,6 +3,10 @@
 	
 	<head>
 		<style>
+		@font-face{
+  src: url('font/font2.woff');
+  font-family: myfont;
+}
 			header {
 				margin-bottom: 0;
 			}
@@ -74,6 +78,7 @@
 		<style type="text/css">
 		body {
 			background-color: #8a8a8a;
+			font-family: myfont;
 		}
 		#contentFlow {
 			max-width: 60%;
@@ -103,9 +108,9 @@
 		}
 
 		/*workaround for meny*/
-		.meny ul {
+		/*.meny ul {
 			width: 2000px;
-		}
+		}*/
 		/*till here*/
 		</style>
 
@@ -126,19 +131,29 @@
 			.fan li:nth-child(odd)
 			{
 				color:white;
-				background-color: rgba(0,0,0,0.7);
+				background-color: rgba(0,0,0,0.99);
 			}
 			.fan li:nth-child(even)
 			{
 				color:black;
-				background-color: rgba(255,255,255,0.7);
+				background-color: rgba(255,255,255,0.99);
 			}
 .meny {
 	  background: url('media.jpg');
 
 }
+.meny-arrow{
+	color:white;
+	background-color: transparent;
+	border-color:transparent;
+	font-family: myfont;
+}
 .main {
-	background: url('media.jpg');
+	background: url('img/updates_back.png') bottom repeat;
+}
+li {
+	box-shadow: 0px 0px 20px black;
+	font-family: myfont;
 }
 		</style>
 	</head>
@@ -148,27 +163,25 @@
 <div class="none"></div>
 
   		<div class="meny" id="meny">
-			<ul background="img/media.jpg">
-				<li class="btn-cura"><a href="#">Home</a></li>
-				<li class="btn-cura"><a href="#">Events</a></li>
-				<li class="btn-cura"><a href="updates.php">Updates</a></li>
-				<li class="btn-cura"><a href="login.php">Admin login</a></li>
-				<li class="btn-cura"><a href="#">Contact us</a></li>
-				<li class="btn-cura"><a href="#">Demo</a></li>
-				<li class="btn-cura"><a href="#">Responsive Design</a></li>
-				<li class="btn-cura"><a href="#">iPhone and Android</a></li>
+<ul background="media.jpg">
+				<a href="index.php"><li class="btn-cura">Home</li></a>
+				<a href="home.php"><li class="btn-cura">Events</li></a>
+				<a href="updates.php"><li class="btn-cura">Updates</li></a>
+				<a href="contact.php"><li class="btn-cura">Contact Us</li></a>
+				<a href="login.php"><li class="btn-cura">Admin</li></a>
 			</ul>
 		</div>
 
-		<div class="meny-arrow"></div>
+		<div class="meny-arrow">Navigation</div>
 
 
 <div class="main">
-		<ul class="fan" id="scroll"><li>One</li><li>Two</li><li>Three</li><li>Four</li><li>Five</li><li>Six</li><li>Seven</li><li>Eight</li><li>Nine</li><li>Ten</li><li>Eleven</li><li>Twelve</li><li>Thirteen</li><li>Fourteen</li><li>Fifteen</li><li>Sixteen</li><li>Seventeen</li><li>Eighteen</li><li>Nineteen</li><li>Twenty</li><li>Twentyone</li><li>Twentytwo</li><li>Twentythree</li><li>Twentyfour</li><li>Twentyfive</li><li>Twentysize</li><li>Twentyseven</li><li>Twentyeight</li><li>Twentynine</li><li>Thirty</li><li>Thirtyone</li><li>Thirtytwo</li><li>Thirtythree</li><li>Thirtyfour</li><li>Thirtyfive</li><li>Thirtysize</li><li>Thirtyseven</li><li>Thirtyeight</li><li>Thirtynine</li><li>Forty</li><li>Fortyone</li><li>Fortytwo</li><li>Fortythree</li><li>Fortyfour</li><li>Fortyfive</li><li>Fortysix</li><li>Fortyseven</li><li>Fortyeight</li><li>Fortynine</li><li>Fifty</li><li>Fiftyone</li><li>Fiftytwo</li><li>Fiftythree</li><li>Fiftyfour</li><li>Fiftyfive</li><li>Fiftysix</li><li>Fiftyseven</li><li>Fiftyeight</li><li>Fiftynine</li><li>Sixty</li><li>Sixtyone</li><li>Sixtytwo</li><li>Sixtythree</li><li>Sixtyfour</li><li>Sixtyfive</li><li>Sixtysix</li><li>Sixtyseven</li><li>Sixtyeight</li><li>Sixtynine</li><li>Seventy</li><li>Seventyone</li><li>Seventytwo</li><li>Seventythree</li><li>Seventyfour</li><li>Seventyfive</li><li>Seventysix</li><li>Seventyseven</li><li>Seventyeight</li><li>Seventynine</li><li>Eighty</li><li>Eightyone</li><li>Eightytwo</li><li>Eightythree</li><li>Eightyfour</li><li>Eightyfive</li><li>Eightysix</li><li>Eightyseven</li><li>Eightyeight</li><li>Eightynine</li><li>Ninety</li><li>Ninetyone</li><li>Ninetytwo</li><li>Ninetythree</li><li>Ninetyfour</li><li>Ninetyfive</li><li>Ninetysix</li><li>Ninetyseven</li><li>Ninetyeight</li><li>Ninetynine</li></ul>
+		<ul class="fan" id="scroll"><li>This section will load data from database.</li><li>Two</li><li>Three</li><li>Four</li><li>Five</li><li>Six</li><li>Seven</li><li>Eight</li><li>Nine</li><li>Ten</li><li>Eleven</li><li>Twelve</li><li>Thirteen</li><li>Fourteen</li><li>Fifteen</li><li>Sixteen</li><li>Seventeen</li><li>Eighteen</li><li>Nineteen</li><li>Twenty</li><li>Twentyone</li><li>Twentytwo</li><li>Twentythree</li><li>Twentyfour</li><li>Twentyfive</li><li>Twentysize</li><li>Twentyseven</li><li>Twentyeight</li><li>Twentynine</li><li>Thirty</li><li>Thirtyone</li><li>Thirtytwo</li><li>Thirtythree</li><li>Thirtyfour</li><li>Thirtyfive</li><li>Thirtysize</li><li>Thirtyseven</li><li>Thirtyeight</li><li>Thirtynine</li><li>Forty</li><li>Fortyone</li><li>Fortytwo</li><li>Fortythree</li><li>Fortyfour</li><li>Fortyfive</li><li>Fortysix</li><li>Fortyseven</li><li>Fortyeight</li><li>Fortynine</li><li>Fifty</li><li>Fiftyone</li><li>Fiftytwo</li><li>Fiftythree</li><li>Fiftyfour</li><li>Fiftyfive</li><li>Fiftysix</li><li>Fiftyseven</li><li>Fiftyeight</li><li>Fiftynine</li><li>Sixty</li><li>Sixtyone</li><li>Sixtytwo</li><li>Sixtythree</li><li>Sixtyfour</li><li>Sixtyfive</li><li>Sixtysix</li><li>Sixtyseven</li><li>Sixtyeight</li><li>Sixtynine</li><li>Seventy</li><li>Seventyone</li><li>Seventytwo</li><li>Seventythree</li><li>Seventyfour</li><li>Seventyfive</li><li>Seventysix</li><li>Seventyseven</li><li>Seventyeight</li><li>Seventynine</li><li>Eighty</li><li>Eightyone</li><li>Eightytwo</li><li>Eightythree</li><li>Eightyfour</li><li>Eightyfive</li><li>Eightysix</li><li>Eightyseven</li><li>Eightyeight</li><li>Eightynine</li><li>Ninety</li><li>Ninetyone</li><li>Ninetytwo</li><li>Ninetythree</li><li>Ninetyfour</li><li>Ninetyfive</li><li>Ninetysix</li><li>Ninetyseven</li><li>Ninetyeight</li><li>Ninetynine</li></ul>
 </div>
 		<script src="js/stroll.min.js"></script>
 		<script>
 				stroll.bind( '#scroll' );
+
 		</script>
 
 		<script src="js/meny.min.js"></script>
@@ -182,7 +195,7 @@
 				contentsElement: document.querySelector( '.main' ),
 
 				// [optional] The alignment of the menu (top/right/bottom/left)
-				position: Meny.getQuery().p || 'top',
+				position: Meny.getQuery().p || 'left',
 
 				// [optional] The height of the menu (when using top/bottom position)
 				height: 200,
@@ -191,7 +204,7 @@
 				width: 260,
 
 				// [optional] Distance from mouse (in pixels) when menu should open
-				threshold: 40,
+				threshold: 100,
 
 				// [optional] Use mouse movement to automatically open/close
 				mouse: true,

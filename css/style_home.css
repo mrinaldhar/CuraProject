@@ -207,16 +207,18 @@
     .main section.page1 {
       background:rgb(230, 217, 200);
     }
-    .main section.page1 h1 {
+    h1 {
       text-align: left;
       padding: 0;
       margin-bottom: 15px;
       font-size: 70px;
       color: black;
+      float:left;
     }
-    .main section.page1 h2 {
+    h2 {
       color: rgba(0,0,0,0.85);
-      text-align: center;
+      text-align: left;
+      float:right;
       width: 435px;
       line-height: 160%;
     }
