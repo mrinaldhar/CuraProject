@@ -1,0 +1,146 @@
+body {
+	background-color: black;
+	color:white;
+	text-decoration: none;
+	font-family: consolas;
+}
+#viewteamsp, #manageeventsp, #newadminp {
+	display:none;
+}
+a {
+	color:#aaaaaa;
+	text-decoration: none;
+}
+#managetable {
+	width:100%;
+	
+	background-color: rgba(0,0,0,0.4);
+	font-family: consolas;
+}
+#teaminfotable {
+
+}
+#managetable tr td textarea {
+	width:100%;
+	height:100px;
+}
+#managetable tr td {
+	text-align: center;
+	border: 1px white dashed;
+	padding: 20px;
+}
+.menubar {
+	width:100%;
+	top:0px;
+	position: absolute;
+	top:0px;
+	background-color: rgba(80,80,80,1);
+	left:0px;
+	right:0px;
+	max-height:auto;
+	text-align: center;
+}
+#statstable td {
+padding:20px;
+border: 1px dashed;
+}
+#statstable {
+		background-color: rgba(0,0,0,0.4);
+	font-family: consolas;
+	
+}
+.menuitem {
+
+	padding: 20px 10px 20px 10px;
+	display:inline-block;
+	width:15%;
+
+	cursor: pointer;
+}
+.menubar a {
+	color:white;
+}
+.menuitem:hover {
+	background-color: rgb(100,100,100);
+	color:white;
+}
+#newadminp {
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	font-family: consolas;
+}
+#newadminp table {
+	width:100%;
+	padding:30px;
+
+}
+button {
+	padding:10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border:0px;
+	box-shadow: 1px 1px 10px black;
+}
+button:hover {
+	background-color: black;
+	color:white;
+	border:0px;
+	cursor: pointer;
+}
+#newadminp table td {
+	text-align: center;
+	padding: 30px;
+}
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding:60px;
+	max-width:74%;
+	height:80%;
+	background-color:rgb(100,100,100);
+}
+.pageitem {
+	width:100%;
+}
+.footer {
+	position: absolute;
+	bottom:0px;
+	width:100%;
+	left:0px;
+	right:0px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+input {
+	box-shadow: 1px 1px 10px black;
+	border:0px;
+	padding:5px;
+	font-family: colsolas;
+	border-radius: 6px;
+}
+select {
+	padding:5px;
+}
+option {
+	padding:5px;
+}
+#teaminfotable {
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	font-family: consolas;
+	width:100%;
+	margin-top: 30px;
+	display: none;
+
+
+}
+#teaminfotable tr td {
+	padding: 20px;
+	border: 1px white dashed;
+}
+#subject {
+	width: 20%;
+}

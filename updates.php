@@ -2,6 +2,8 @@
 <html lang="en">
 	
 	<head>
+
+		<script src="js/jquerymin.js"></script>
 		<style>
 		@font-face{
   src: url('font/font2.woff');
@@ -15,7 +17,7 @@
 				width: 90%;
 				margin: 0 auto;
 				opacity:0.7;
-				height: screen.width();
+				height: screen.height();
 				padding-top: 10%;
 				padding-bottom: 10%;
 			}
@@ -83,9 +85,13 @@
 		#contentFlow {
 			max-width: 60%;
 		}
+		.posthead {
+			text-align: center;
+			font-weight: 700;
+		}
 		.btn-cura {
-			border-radius: 10px;
-			background-color: rgba(0,0,0,0.4);
+/*			border-radius: 10px;
+*/			background-color: rgba(0,0,0,0.4);
 			color:white;
 			font-size: 1.5em;
 			margin:7px;
@@ -140,6 +146,7 @@
 			}
 .meny {
 	  background: url('media.jpg');
+	  text-align: center;
 
 }
 .meny-arrow{
@@ -164,8 +171,8 @@ li {
 
   		<div class="meny" id="meny">
 <ul background="media.jpg">
-				<a href="index.php"><li class="btn-cura">Home</li></a>
-				<a href="home.php"><li class="btn-cura">Events</li></a>
+				<a href="home.php"><li class="btn-cura">Home</li></a>
+				<a href="events.php"><li class="btn-cura">Events</li></a>
 				<a href="updates.php"><li class="btn-cura">Updates</li></a>
 				<a href="contact.php"><li class="btn-cura">Contact Us</li></a>
 				<a href="login.php"><li class="btn-cura">Admin</li></a>
@@ -176,14 +183,13 @@ li {
 
 
 <div class="main">
-		<ul class="fan" id="scroll"><li>This section will load data from database.</li><li>Two</li><li>Three</li><li>Four</li><li>Five</li><li>Six</li><li>Seven</li><li>Eight</li><li>Nine</li><li>Ten</li><li>Eleven</li><li>Twelve</li><li>Thirteen</li><li>Fourteen</li><li>Fifteen</li><li>Sixteen</li><li>Seventeen</li><li>Eighteen</li><li>Nineteen</li><li>Twenty</li><li>Twentyone</li><li>Twentytwo</li><li>Twentythree</li><li>Twentyfour</li><li>Twentyfive</li><li>Twentysize</li><li>Twentyseven</li><li>Twentyeight</li><li>Twentynine</li><li>Thirty</li><li>Thirtyone</li><li>Thirtytwo</li><li>Thirtythree</li><li>Thirtyfour</li><li>Thirtyfive</li><li>Thirtysize</li><li>Thirtyseven</li><li>Thirtyeight</li><li>Thirtynine</li><li>Forty</li><li>Fortyone</li><li>Fortytwo</li><li>Fortythree</li><li>Fortyfour</li><li>Fortyfive</li><li>Fortysix</li><li>Fortyseven</li><li>Fortyeight</li><li>Fortynine</li><li>Fifty</li><li>Fiftyone</li><li>Fiftytwo</li><li>Fiftythree</li><li>Fiftyfour</li><li>Fiftyfive</li><li>Fiftysix</li><li>Fiftyseven</li><li>Fiftyeight</li><li>Fiftynine</li><li>Sixty</li><li>Sixtyone</li><li>Sixtytwo</li><li>Sixtythree</li><li>Sixtyfour</li><li>Sixtyfive</li><li>Sixtysix</li><li>Sixtyseven</li><li>Sixtyeight</li><li>Sixtynine</li><li>Seventy</li><li>Seventyone</li><li>Seventytwo</li><li>Seventythree</li><li>Seventyfour</li><li>Seventyfive</li><li>Seventysix</li><li>Seventyseven</li><li>Seventyeight</li><li>Seventynine</li><li>Eighty</li><li>Eightyone</li><li>Eightytwo</li><li>Eightythree</li><li>Eightyfour</li><li>Eightyfive</li><li>Eightysix</li><li>Eightyseven</li><li>Eightyeight</li><li>Eightynine</li><li>Ninety</li><li>Ninetyone</li><li>Ninetytwo</li><li>Ninetythree</li><li>Ninetyfour</li><li>Ninetyfive</li><li>Ninetysix</li><li>Ninetyseven</li><li>Ninetyeight</li><li>Ninetynine</li></ul>
+		<ul class="fan" id="scroll"><li>This section will load data from database.</li></ul>
 </div>
 		<script src="js/stroll.min.js"></script>
 		<script>
 				stroll.bind( '#scroll' );
 
 		</script>
-
 		<script src="js/meny.min.js"></script>
 		<script>
 			// Create an instance of Meny
@@ -229,5 +235,22 @@ li {
 				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
 			}
 		</script>
+		<script>
+		function loadupdates() {
+
+		  $.ajax({
+        method:'get',
+        url:'getupdates.php',
+        success:function(data){
+           	document.getElementById('scroll').innerHTML = data;
+		
+        }
+      });
+		}
+$(document).ready(function() {
+	loadupdates();
+		 setInterval(loadupdates, 3000);
+});
+		 </script>
 	</body>
 </html>

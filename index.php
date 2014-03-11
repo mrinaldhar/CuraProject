@@ -88,10 +88,8 @@ a:active, a:visited, a:link {
 
 }
 #content {
-	margin-top: 150px;
-	background-color: rgba(255,255,255,0.2);
-	width:100%;
-	box-shadow: 10px 10px 10px black;
+	margin-top: 70px;
+    text-align: center;
 }
 #footer {
 	position: fixed;
@@ -111,6 +109,11 @@ a:active, a:visited, a:link {
 .fb-like {
 vertical-align: middle;
 }
+#logo {
+    width:45%;
+    height:auto;
+    padding:20px;
+}
 </style>
 </head>
 <body>
@@ -124,8 +127,8 @@ vertical-align: middle;
 }(document, 'script', 'facebook-jssdk'));</script>
 <div id="header">
 <ul class="menubar">
-<a href="index.php"><li>Home</li></a>
-<a href="home.php"><li>Events</li></a>
+<a href="home.php"><li>Home</li></a>
+<a href="events.php"><li>Events</li></a>
 <a href="updates.php"><li>Updates</li></a>
 <a href="contact.php"><li>Contact us</li></a>
 <a href="login.php"><li>Admin</li></a>
@@ -134,7 +137,7 @@ vertical-align: middle;
 </div>
 
 <div id="content">
-
+<img src="img/curalogo.png" id="logo" />
 <div class="clock">
             <!-- Days -->
             <div class="clock_days">

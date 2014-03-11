@@ -1,4 +1,14 @@
-<html>
+<?php
+ob_start();
+session_start();
+if (isset($_SESSION['userid']) && isset($_SESSION['realname']) && isset($_SESSION['username']))
+{
+    $home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/adminpanel.php'; 
+          header('Location: ' . $home_url); 
+}
+else {
+}
+?><html>
 <head><title>login shell</title>
 
 <style>

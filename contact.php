@@ -66,18 +66,32 @@ box-shadow: 0px 0px 10px white;
 .btn-cura a{
   color:#aaaaaa;
 }
+a {
+	color:black;
+}
 ul {
   list-style-image: none;
 }
 .meny {
   background: url('media.jpg');
 }
+.meny-arrow {
+	color:white;
+}
 .fb-like-box {
 	position: relative;
 	margin-top:50px;
+	color:black;
 }
-.page1 {
-	background-color: black;
+.main {
+	background-color: #1f1f1f;
+}
+.static {
+	float:right;
+	color:white;
+	margin-right: 120px;
+
+	font-size: 1.5em;
 }
 </style>
 </head>
@@ -94,8 +108,8 @@ ul {
 
   		<div class="meny">
 			<ul background="media.jpg">
-				<a href="index.php"><li class="btn-cura">Home</li></a>
-				<a href="home.php"><li class="btn-cura">Events</li></a>
+				<a href="home.php"><li class="btn-cura">Home</li></a>
+				<a href="events.php"><li class="btn-cura">Events</li></a>
 				<a href="updates.php"><li class="btn-cura">Updates</li></a>
 				<a href="contact.php"><li class="btn-cura">Contact Us</li></a>
 				<a href="login.php"><li class="btn-cura">Admin</li></a>
@@ -106,8 +120,12 @@ ul {
 
 	  	<div class="main">
 	    
-<div class="fb-like-box" data-href="https://www.facebook.com/Curaevents" data-colorscheme="dark" data-show-faces="true" data-header="true" data-width="600px" data-stream="true" data-show-border="true"></div>
+<div class="fb-like-box" data-href="https://www.facebook.com/Curaevents" data-colorscheme="dark" data-show-faces="true" data-header="false" data-width="300px" data-stream="true" data-show-border="true"></div>
+<div class="fb-like-box" data-href="https://www.facebook.com/Curaevents" data-colorscheme="dark" data-show-faces="true" data-header="false" data-width="300px" data-stream="true" data-show-border="true"></div>
+<div class="static">or , contact us directly at 
+<br /><br />
 
+<br />Rohan Bhatiyal, 98098098080<br /><br />Prateek Jain, 898978979899</div>
 
 
 </div>  
